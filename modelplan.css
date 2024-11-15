@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#004981;
+}
+
+sup {
+    vertical-align:super;
+    font-size:18px;
+    color:red;
+    margin-left:3px;
+}
+
+body {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color:rgb(255, 255, 255);
+}
+
+#header {
+    width:90%;
+    background-color:#005493;
+    color:white;
+    border:2px solid rgb(0, 46, 93);
+    margin-top:15px;
+    margin-bottom:15px;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.header-model {
+    font-size:24px;
+    color:aliceblue;
+}
+
+.header-description {
+    margin-top:3px;
+}
+
+#program-name {
+    color:rgb(255, 245, 99);
+    font-weight:bold;
+    font-style:italic;
+    font-size:30px;
+}
+
+.app_container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.1fr 1fr 1fr 1fr;
+    justify-content:center;
+    align-items:center;
+    border:2px solid rgb(0, 46, 93);
+    width:90%;
+    margin-left:20px;
+    margin-right:20px;
+}
+
+.required-courses {
+    background-color:white;
+    grid-column-start :1;
+    grid-column-end:6;
+}
+
+.program_name, .required-courses {
+    color:white;
+    background-color:rgb(0, 46, 93);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    width:100%;
+    font-size:32px;
+}
+
+.semester {
+    text-align:Center;
+    color:white;
+    font-size:32px;
+    background-color:#005493;
+    border-right:2px solid rgb(0, 46, 93);
+    border-bottom: 2px solid rgb(0, 46, 93);
+    
+}
+
+.fall {
+    grid-column-start:1;
+    grid-column-end: 3;
+    
+}
+
+.spring {
+    grid-column-start:3;
+    grid-column-end:5;
+    
+}
+
+.summer {
+    border-right:0;
+}
+
+.fall-courses {
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start:3;
+    grid-row-end:5;
+    margin-top:1px;
+    height:100%;
+    width:1fr;
+    background-color:white;
+    padding-left:10px;
+    border-right:2px solid rgb(0, 46, 93);
+    border-bottom:2px solid rgb(0, 46, 93);
+}
+
+.spring-courses {
+    grid-column-start:3;
+    grid-column-end: 5;
+    grid-row-start:3;
+    grid-row-end:5;    
+    margin-top:1px;
+    height:100%;
+    width:1fr;
+    background-color:white;
+    padding-left:10px;
+    border-right:2px solid rgb(0, 46, 93);
+    border-bottom:2px solid rgb(0, 46, 93);
+}
+
+.summer-courses {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start:3;
+    grid-row-end:5;    
+    margin-top:1px;
+    height:100%;
+    width:1fr;
+    background-color:white;
+    padding-left:10px;
+    border-bottom:2px solid rgb(0, 46, 93);
+    font-size:32px;
+    text-align:center;
+}
+
+.class {
+    display:flex;
+    margin-top:20px;
+}
+
+.checkmark-fall-1 {
+    text-align:center;
+    width:25px;
+    height:25px;
+    border:2px solid rgb(0, 46, 93);
+    font-size:24px;
+    color:rgb(26, 26, 26);
+    cursor:pointer;
+}
+
+#course_id {
+    font-weight:bold;
+    text-decoration:underline 2.5px;    
+    cursor:pointer;
+    font-size:20px;
+}
+
+.yourelective {
+    font-weight:bold;
+}
+
+.course {
+    margin-left:10px;
+    font-size:14pt;
+    line-height:1.2;
+
+}
+
+.biocourse {
+    flex-flow:column;
+    gap:6px;
+}
+
+.year1-description {
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+    gap:25px;
+    height:100%;
+    grid-column-start:1;
+    grid-column-end:6;
+    grid-row-start:5;
+    grid-row-end:6;
+    font-size:22px;
+    margin-left:50px;
+    margin-right:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+.app_container_secondyear {
+    margin-top:30px;
+}
+
+.second-year {
+    background-color:rgb(0, 46, 93);
+}
+
+@media (max-width:655px) {
+    .app_container {
+        margin-left:0;
+        margin-right:0;
+        grid-template-columns:1fr;
+        grid-template-rows:0.2fr 0.05fr 1fr   0.05fr 1fr    0.1fr 0.3fr 0.5fr;
+    }
+
+    .required-courses {
+        grid-row-start:1;
+        grid-row-end:1;
+        text-align:center;
+    }
+
+    .fall {
+        grid-row-start:2;
+        grid-row-end:2;
+        grid-column-start:1;
+        grid-column-end:5;
+        border-right:0;
+        height:100%;
+    }
+
+    .fall-courses {
+        grid-row-start:3;
+        grid-row-end:3;
+        grid-column-start:1;
+        grid-column-end:5;
+        border:0;
+        border-right:0;
+    }
+
+    .spring {
+        grid-row-start:4;
+        grid-row-end:4;
+        grid-column-start:1;
+        grid-column-end:5;
+    }
+
+    .spring-courses {
+        grid-row-start:5;
+        grid-row-end:5;
+        grid-column-start:1;
+        grid-column-end:5;
+        border:0;
+    }
+
+    .summer {
+        grid-row-start:6;
+        grid-row-end:6;
+        grid-column-start:1;
+        grid-column-end:5;
+    }
+
+    .summer-courses {
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        grid-row-start:7;
+        grid-row-end:7;
+        grid-column-start:1;
+        grid-column-end:5;
+        text-align:center;
+        font-size:32px;
+    }
+
+    .year1-description {
+        padding-top:20px;
+        padding-bottom:20px;
+        grid-row-start:8;
+        grid-row-end:8;
+        grid-column-start:1;
+        grid-column-end:5;
+        font-size:16px;
+        gap:7px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+}
+
+@media (max-width:400px) {
+    .app_container {
+        grid-template-rows: 0.2fr 0.1fr 0.8fr   0.1fr 0.8fr    0.1fr 0.3fr 0.5fr;
+    }
+
+}
+
+
