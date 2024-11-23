@@ -134,6 +134,17 @@ html {
   color: #004981;
 }
 
+a {
+  color: #005493;
+  text-decoration: underline 2.5px;
+  font-weight: bold;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #005493;
+}
+
 sup {
   vertical-align: super;
   font-size: 18px;
@@ -146,7 +157,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: rgb(255, 255, 255);
 }
 
 #header {
@@ -180,7 +190,7 @@ body {
 .app_container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.2fr 0.1fr 0.8fr 1fr 0.5fr;
   justify-content: center;
   align-items: center;
   border: 2px solid rgb(0, 46, 93);
@@ -274,7 +284,7 @@ body {
 
 .class {
   display: flex;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .checkmark-fall-1 {
@@ -350,10 +360,18 @@ body {
   padding-bottom: 20px;
 }
 
-.emptycourse {
+.full-course-child {
+  padding-bottom: 20px;
 }
 
 .app_container_thirdyear {
+  grid-template-columns: 0.2fr 1fr 0.7fr 0.4fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 1fr;
+}
+
+.app_container_fourthyear {
+  grid-template-columns: 0.2fr 1fr 0.7fr 0.4fr 1fr;
+  grid-template-rows: 0.2fr 0.1fr 1fr 1fr 0.5fr;
 }
 
 .third-year-spring {
@@ -375,6 +393,9 @@ body {
 }
 
 .nocourses-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 0;
   font-size: 32px;
@@ -386,6 +407,11 @@ body {
     margin-right: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.05fr 1fr 0.05fr 1fr 0.1fr 0.3fr 0.5fr;
+  }
+
+  .app_container_thirdyear {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 0.05fr 1fr 0.05fr 1fr 0.1fr 0.3fr;
   }
 
   .required-courses {
@@ -437,8 +463,6 @@ body {
 
   .summer-courses {
     display: grid;
-    align-items: center;
-    justify-content: center;
     grid-row-start: 7;
     grid-row-end: 7;
     grid-column-start: 1;
@@ -461,6 +485,14 @@ body {
     gap: 7px;
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .year1-description {
+    font-size: 23px;
+  }
+
+  .year1-description:first {
+    font-size: 12px;
   }
 }
 
