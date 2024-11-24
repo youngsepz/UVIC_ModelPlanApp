@@ -133,6 +133,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: #004981;
+  text-decoration-skip-ink: none;
 }
 
 a {
@@ -219,6 +220,10 @@ body {
 }
 
 .semester {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
   text-align: Center;
   color: white;
   font-size: 32px;
@@ -512,6 +517,11 @@ body {
 
   .year1-description:first {
     font-size: 12px;
+  }
+
+  .semester {
+    height: auto;
+    display: block;
   }
 }
 
