@@ -130,7 +130,8 @@ table {
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   color: #004981;
 }
 
@@ -254,6 +255,10 @@ body {
   border-bottom: 2px solid rgb(0, 46, 93);
 }
 
+.fall-courses:last-child {
+  padding-bottom: 50px;
+}
+
 .spring-courses {
   grid-column-start: 3;
   grid-column-end: 5;
@@ -309,7 +314,7 @@ body {
   font-weight: bold;
   text-decoration: underline 2.5px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .yourelective {
@@ -318,7 +323,7 @@ body {
 
 .course {
   margin-left: 10px;
-  font-size: 14pt;
+  font-size: 18pt;
   line-height: 1.2;
 }
 
@@ -397,8 +402,22 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0;
+  padding: 0 20px 0 20px;
   font-size: 32px;
+  word-wrap: keep-all;
+}
+
+.modelplan-description {
+  display: flex;
+  flex-flow: column;
+  width: 90%;
+  font-size: 24px;
+  gap: 25px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.modelplan-statements {
 }
 
 @media (max-width: 655px) {
